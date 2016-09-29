@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Php-react by silvajonathan</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Php-react</h1>
+        <p>Mount React components by calling a render function from html &#39;script&#39; tag</p>
+
+        <p class="view"><a href="https://github.com/silvajonathan/php-react">View the Project on GitHub <small>silvajonathan/php-react</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/silvajonathan/php-react/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/silvajonathan/php-react/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/silvajonathan/php-react">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="php-react" class="anchor" href="#php-react" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>php-react</h1>
+
+<p>Mount React components by calling a render function from html 'script' tag</p>
+
+<p>Simple example to ilustrate a way to mount React components from  tags passing props to them if they need.
+This can be done thanks to Webpack and its ability to build modules as libraries, exposing functions that can render the components.
+Those functions, that receives a props object and the tag which the component will be mounted inside as parameters, calls ReactDOM render.</p>
+
+<p>The keys of this approach are:</p>
+
+<p>Setup webpack to expose modules as LIBRARIES (as you can see on webpack.config.js:9~10) inside Global object.</p>
+
+<p>The Webpack React modules, used to export the component itself, will export a function that can render the component. Ex: index.js.jsx.</p>
+
+<p>Inside the html (index.php) the bundled output is imported and the Global object is used to render the Index component receiving an json, that will be passed as props to the Index component, and the container tag, where the Index component will be mounted inside.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/silvajonathan">silvajonathan</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
