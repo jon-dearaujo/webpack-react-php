@@ -6,9 +6,12 @@ module.exports = {
     path: './',
     filename: '[name].bundled.js',
     publicPath: './',
-    libraryTarget: 'var', //key point! - Turns webpack bundle output to a library, available as a global variable
-    library: ['Global', '[name]'] //key point! - Global variable will be available on the html which includes the bundle output
-                                  // Inside th Global object the outputs and its functions will be available. Ex: Global.Index.render()
+    //key point! - Turns webpack bundle output to a library, available as a global variable
+    libraryTarget: 'var',
+    /*key point! - Global variable will be available on the html which includes the bundle output
+      Inside th Global object the outputs and its functions will be available. Ex: Global.Index.render()
+     */
+    library: ['Global', '[name]']
   },
   module: {
     loaders: [

@@ -7,6 +7,7 @@
     <div id="react-container"></div>
     <script type="text/javascript" src="Index.bundled.js"></script>
     <script type="text/javascript">
+    /*mount the props as you want. Its probably compatible with technologies such as Java .jsp, Rails .erb, Python .jinja...*/
       var props = <?php echo json_encode(array('value' =>rand())) ?>;
       Global.Index.render(props, 'react-container');
     </script>

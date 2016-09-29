@@ -9,8 +9,8 @@ class Index extends React.Component {
 }
 
 module.exports = {
-  //Module exports a function that can Render its component, instead of exporting the component itself;
-  //This function will be available inside the html, thanks to Webpack setup.
+  /*Module exports a function that can Render its component, instead of exporting the component itself;
+  This function will be available inside the html, thanks to Webpack setup. */
   render: function(props, containerElementId){
     ReactDOM.render(
       React.createElement(Index, props),
