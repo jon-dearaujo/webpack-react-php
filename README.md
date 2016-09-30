@@ -1,4 +1,4 @@
-# php-react
+# webpack-react-php
 Mount React components by calling a render function from html 'script' tag
 
 Simple example to ilustrate a way to mount React components from <script></script> tags passing props to them if they need.
